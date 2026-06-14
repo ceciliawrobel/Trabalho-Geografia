@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Geográfico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8; /* Aumentado para dar mais espaço entre as linhas */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            font-size: 1.25rem; /* Letras do texto padrão maiores */
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2.5rem 0;
+            border-bottom: 5px solid #27ae60;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.2rem; /* Título principal maior */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.4rem; /* Subtítulo do cabeçalho maior */
+            margin-top: 0.5rem;
+        }
+        .container {
+            max-width: 1050px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+        article {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 0.7rem;
+            margin-top: 1.5rem;
+            font-size: 2.1rem; /* Títulos das seções maiores */
+        }
+        h3 {
+            color: #27ae60;
+            margin-top: 2rem;
+            font-size: 1.6rem; /* Subtítulos maiores */
+        }
+        ul {
+            padding-left: 1.8rem;
+        }
+        li {
+            margin-bottom: 1.2rem; /* Mais espaçamento entre os itens da lista */
+        }
+        strong {
+            color: #2c3e50;
+        }
+        /* Estilo da Previsão do Tempo */
+        .weather-widget {
+            display: flex;
+            justify-content: space-around;
+            background: #e8f8f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #a3e4d7;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .weather-card {
+            padding: 0.5rem 1rem;
+        }
+        .weather-card h4 { 
+            margin: 0; 
+            color: #16a085; 
+            font-size: 1.4rem; /* Nome das cidades maior */
+        }
+        .weather-card .temp { 
+            font-size: 2rem; /* Temperatura maior */
+            font-weight: bold; 
+            color: #2c3e50; 
+            margin: 0.3rem 0;
+        }
+        .weather-card p {
+            margin: 0;
+            font-size: 1.15rem;
+        }
+        
+        /* Estilo da Charge */
+        .charge-container {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .charge-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .charge-container p {
+            font-size: 1.3rem; /* Legenda da charge maior */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #2c3e50;
+            color: #fff;
+            font-size: 1.1rem; /* Rodapé maior */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O Geográfico</h1>
+        <p>A sua fonte diária de conhecimento sobre o mundo</p>
+    </header>
+
+    <div class="container">
+        
+        <article>
+            <h2>Previsão do Tempo (Capitais)</h2>
+            <div class="weather-widget">
+                <div class="weather-card">
+                    <h4>Curitiba</h4>
+                    <p class="temp">14°C</p>
+                    <p>Nublado</p>
+                </div>
+                <div class="weather-card">
+                    <h4>São Paulo</h4>
+                    <p class="temp">22°C</p>
+                    <p>Ensolarado</p>
+                </div>
+                <div class="weather-card">
+                    <h4>Rio de Janeiro</h4>
+                    <p class="temp">28°C</p>
+                    <p>Parcialmente Nublado</p>
+                </div>
+                <div class="weather-card">
+                    <h4>Manaus</h4>
+                    <p class="temp">31°C</p>
+                    <p>Pancadas de Chuva</p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2>O que é Clima?</h2>
+            <p>Muitas vezes confundido com o "tempo", o <strong>clima</strong> é o padrão estável das condições atmosféricas observado em uma determinada região ao longo de um grande período — geralmente, no mínimo 30 anos de estudos e registros.</p>
+            <p>Enquanto o <em>tempo</em> é o estado da atmosfera agora (se está chovendo ou fazendo sol hoje), o <em>clima</em> determina o que esperar de cada estação do ano baseando-se em fatores como temperatura, umidade, pressão atmosférica, ventos e chuvas.</p>
+        </article>
+
+        <article>
+            <h2>Como as Mudanças Climáticas Afetam o Mundo?</h2>
+            <p>As <strong>mudanças climáticas</strong> referem-se a transformações a longo prazo nos padrões de temperatura e clima do planeta. Embora a Terra já tenha passado por ciclos de aquecimento e resfriamento naturais, o ritmo atual é acelerado principalmente pelas ações humanas, como a queima de combustíveis fósseis e o desmatamento.</p>
+            <p>Os impactos globais já são visíveis e preocupantes:</p>
+            <ul>
+                <li><strong>Eventos Extremos:</strong> Aumento na frequência e intensidade de furacões, secas prolongadas e ondas de calor.</li>
+                <li><strong>Derretimento das Geleiras:</strong> Elevação do nível dos oceanos, ameaçando cidades costeiras.</li>
+                <li><strong>Perda de Biodiversidade:</strong> Ecossistemas sofrem com a alteração rápida das temperaturas, levando espécies à extinção.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Os Climas do Brasil</h2>
+            <p>Por conta da sua enorme extensão territorial, o Brasil apresenta uma grande diversidade climática:</p>
+            
+            <h3>1. Clima Equatorial</h3>
+            <p>Domina a Região Norte. Caracterizado por temperaturas elevadas o ano todo (média acima de 25°C) e chuvas abundantes e constantes.</p>
+
+            <h3>2. Clima Tropical (ou Tropical Típico)</h3>
+            <p>Abrange o Brasil Central. Possui duas estações muito bem definidas: um verão quente e chuvoso e um inverno seco.</p>
+
+            <h3>3. Clima Semiárido</h3>
+            <p>Típico do Sertão nordestino. Apresenta temperaturas médias muito altas e chuvas escassas e irregulares.</p>
+
+            <h3>4. Clima Tropical Litorâneo</h3>
+            <p>Estende-se pela faixa costeira. Influenciado pela umidade do oceano, traz temperaturas quentes e chuvas frequentes.</p>
+
+            <h3>5. Clima Tropical de Altitude</h3>
+            <p>Encontrado nas áreas serranas da Região Sudeste. Apresenta verões suaves e invernos mais frios devido à altitude.</p>
+
+            <h3>6. Clima Subtropical</h3>
+            <p>Ocorre na Região Sul (abaixo do Trópico de Capricórnio). Estações bem marcadas com os invernos mais frios do país.</p>
+        </article>
+
+        <article>
+            <h2>Os Climas do Paraná</h2>
+            <p>O estado do Paraná funciona como uma zona de transição climática no Brasil. Apresenta dois climas principais de acordo com a altitude e a latitude:</p>
+            <ul>
+                <li><strong>Clima Subtropical Úmido (Cfa):</strong> Predomina no norte, oeste e no litoral paranaense. Caracteriza-se por verões quentes (médias acima de 22°C) e invernos brandos, com chuvas bem distribuídas ao longo do ano.</li>
+                <li><strong>Clima Subtropical de Altitude (Cfb):</strong> Ocorre nas regiões mais elevadas do estado, como Curitiba, os Campos Gerais e o sul do Paraná. Os verões são frescos (médias abaixo de 22°C) e os invernos são rigorosos, com ocorrência frequente de geadas.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Charge do Dia</h2>
+            <div class="charge-container">
+                <img src="https://ceciliawrobel.github.io/-/5661-1536x1152.jpg" alt="Charge sobre o meio ambiente e mudanças climáticas">
+                <hr style="border: 0; border-top: 1px dashed #bdc3c7; margin: 1.5rem 0 1rem 0;">
+                <p style="margin: 0; color: #7f8c8d; font-style: italic;">"A urgência climática desenhada de forma clara."</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Curiosidades Geográficas</h2>
+            <ul>
+                <li><strong>O lugar mais seco do mundo:</strong> O Deserto do Atacama, no Chile, passa anos sem receber uma única gota de chuva.</li>
+                <li><strong>O recorde de frio no Brasil:</strong> A menor temperatura registrada oficialmente ocorreu em Caçador (Santa Catarina), em 1952, marcando -14°C.</li>
+                <li><strong>A umidade da Amazônia:</strong> Uma única árvore grande pode bombear cerca de 1.000 litros de água por dia para a atmosfera, ajudando a formar os chamados "rios voadores".</li>
+            </ul>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 O Geográfico. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
